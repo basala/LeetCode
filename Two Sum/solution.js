@@ -14,3 +14,7 @@ var twoSum = function(nums, target) {
     }
     return [];
 }
+
+/**
+ * Time Complexity: O(n^2)
+ */
