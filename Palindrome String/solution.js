@@ -4,10 +4,7 @@ function palindrome_str(arr) {
     for (var i = 0; i < arr.length; i++) {
         var temp = arr[i].split('').reverse().join('');
         // console.log(temp);
-        if (arr[i] == temp && obj[arr[i]] != undefined) {
-            res.push([arr[i], arr[i]]);
-            delete obj[arr[i]];
-        } else if (obj[temp] != undefined) {
+        if (obj[temp] != undefined) {
             res.push([arr[i], temp]);
             delete obj[temp];
         } else {
